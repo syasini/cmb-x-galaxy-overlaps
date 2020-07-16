@@ -123,6 +123,7 @@ if __name__ == "__main__":
         ---
         Don't see your favorite experiment on the list?
         
-        Open a new issue on GitHub or get in touch with me via email: <siavash.yasini@gmail.com>
+        Open a new [issue on GitHub](https://github.com/syasini/cmb-x-galaxy-overlaps/issues) or 
+        get in touch with me via email: <siavash.yasini@gmail.com>
         """
         )
