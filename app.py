@@ -46,7 +46,7 @@ if __name__ == "__main__":
     st.markdown("""
                 Made by [Siavash Yasini](https://github.com/syasini)
                 
-                Contributers: Alex Krolewski, Eric Baxter
+                Contributors: Alex Krolewski, Eric Baxter
                 
                 Checkout the source code on [GitHub](
                 https://github.com/syasini/cmb-x-galaxy-overlaps) and press the star button to 
