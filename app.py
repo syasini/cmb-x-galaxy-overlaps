@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
     # add a checkbox to select the CMB experiment
     st.sidebar.markdown("# CMB")
-    cmb = st.sidebar.selectbox("(blue)", cmb_list)
+    cmb = st.sidebar.selectbox("(blue)", sorted(cmb_list))
     cmb_fname = os.path.join(".", "masks", cmb + ".fits")
     cmb_mask = hp.read_map(cmb_fname)
 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
     # add a checkbox to select the galaxy survey
     st.sidebar.markdown("# Galaxy")
-    galaxy = st.sidebar.selectbox("(red)", galaxy_list)
+    galaxy = st.sidebar.selectbox("(red)", sorted(galaxy_list))
     gal_fname = os.path.join(".", "masks", galaxy+".fits")
     gal_mask = hp.read_map(gal_fname)
 
