@@ -8,15 +8,17 @@ from matplotlib.colors import ListedColormap
 
 cmap = ListedColormap(["tab:grey", "tab:blue", "tab:red", "tab:purple"], "overlap")
 
-cmb_list = ["Planck-Gal-70",
+cmb_list = sorted([
+            "Planck-Gal-70",
             "SPTPol",
             "SPTSZ",
             "ACTPol",
             "Simons-Observatory",
             "CMB-S4",
-            ]
+            ])
 
-galaxy_list = ["BOSS-DR10",
+galaxy_list = sorted([
+               "BOSS-DR10",
                "BOSS-North",
                "DES",
                "DESI",
@@ -24,7 +26,7 @@ galaxy_list = ["BOSS-DR10",
                "CMASS-North",
                "eBOSS-North",
                "LOWZ-North",
-               ]
+               ])
 
 
 def get_fsky(input_mask, threshold=0.1):
@@ -46,7 +48,7 @@ if __name__ == "__main__":
     st.markdown("""
                 Made by [Siavash Yasini](https://github.com/syasini)
                 
-                Contributors: Alex Krolewski, Eric Baxter
+                Contributors: Alex Krolewski, Eric Baxter, Simone Ferraro
                 
                 Checkout the source code on [GitHub](
                 https://github.com/syasini/cmb-x-galaxy-overlaps) and press the star button to 
@@ -60,7 +62,7 @@ if __name__ == "__main__":
 
     # add a checkbox to select the CMB experiment
     st.sidebar.markdown("# CMB")
-    cmb = st.sidebar.selectbox("(blue)", sorted(cmb_list))
+    cmb = st.sidebar.selectbox("(blue)", cmb_list, index=cmb_list.index("Planck-Gal-70"))
     cmb_fname = os.path.join(".", "masks", cmb + ".fits")
     cmb_mask = hp.read_map(cmb_fname)
 
@@ -84,7 +86,7 @@ if __name__ == "__main__":
 
     # add a checkbox to select the galaxy survey
     st.sidebar.markdown("# Galaxy")
-    galaxy = st.sidebar.selectbox("(red)", sorted(galaxy_list))
+    galaxy = st.sidebar.selectbox("(red)", galaxy_list, index=galaxy_list.index("BOSS-DR10"))
     gal_fname = os.path.join(".", "masks", galaxy+".fits")
     gal_mask = hp.read_map(gal_fname)
 
