@@ -53,7 +53,6 @@ if __name__ == "__main__":
                 Checkout the source code on [GitHub](
                 https://github.com/syasini/cmb-x-galaxy-overlaps) and press the star button to 
                 show your support! ️🤩👉⭐ 
-                
                 """)
 
     # --------------
