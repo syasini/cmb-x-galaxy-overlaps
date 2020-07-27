@@ -13,8 +13,8 @@ cmb_list = sorted([
             "SPTPol",
             "SPTSZ",
             "ACTPol",
-            "Simons-Observatory",
-            "CMB-S4",
+            "Simons Observatory (Preliminary)",
+            "CMB-S4 (Preliminary)",
             ])
 
 galaxy_list = sorted([
@@ -48,11 +48,11 @@ if __name__ == "__main__":
     st.markdown("""
                 Made by [Siavash Yasini](https://github.com/syasini)
                 
-                Contributors: Alex Krolewski, Eric Baxter, Simone Ferraro, Colin Hill
+                Contributors: Alex Krolewski, Eric Baxter, Simone Ferraro, [Colin Hill](http://user.astro.columbia.edu/~jch/)
                 
                 Checkout the source code on [GitHub](
                 https://github.com/syasini/cmb-x-galaxy-overlaps) and press the star button to 
-                show your support! ️🤩👉⭐ 
+                show your support! ️👉⭐ 
                 """)
 
     # --------------
