@@ -13,6 +13,7 @@ cmb_list = sorted([
             "SPTPol",
             "SPTSZ",
             "ACTPol",
+            "AdvACT",
             "Simons Observatory (Preliminary)",
             "CMB-S4 (Preliminary)",
             ])
